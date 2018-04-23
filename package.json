@@ -1,6 +1,6 @@
 {
   "name": "@seangenabe/fastify-bankai-hook",
-  "version": "1.0.0-1",
+  "version": "1.0.0-2",
   "description": "Fastify plugin for bankai v9",
   "main": "index.js",
   "dependencies": {
