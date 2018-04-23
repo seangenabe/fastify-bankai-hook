@@ -25,7 +25,7 @@ function _fastifyBankaiHook<
   const handler: any = bankai(entry, opts)
   const { compiler } = handler
 
-  fastify.get('/:file', (request, reply) => {
+  fastify.get('/*', (request, reply) => {
     handler(request.raw, reply.res, () => {
       reply
         .code(404)
