@@ -1,0 +1,32 @@
+{
+  "name": "@seangenabe/fastify-bankai-hook",
+  "version": "1.0.0-1",
+  "description": "Fastify plugin for bankai v9",
+  "main": "index.js",
+  "dependencies": {
+    "bankai": "^9.11.0",
+    "fastify-plugin": "^1.0.0"
+  },
+  "devDependencies": {
+    "fastify": "^1.3.0",
+    "typescript": "^2.8.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --project ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seangenabe/fastify-bankai-hook.git"
+  },
+  "keywords": [
+    "fastify",
+    "bankai"
+  ],
+  "author": "Sean Genabe <seangenabe@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seangenabe/fastify-bankai-hook/issues"
+  },
+  "homepage": "https://github.com/seangenabe/fastify-bankai-hook#readme"
+}
