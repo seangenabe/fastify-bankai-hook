@@ -2,9 +2,9 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "sourceMap": true,
-    "noImplicitReturns": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true
-  }
+    "stripInternal": true
+  },
+  "include": [
+    "*.ts"
+  ]
 }

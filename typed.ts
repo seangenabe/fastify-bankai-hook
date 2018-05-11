@@ -65,13 +65,13 @@ export default function FastifyBankaiHook<
   return plugin
 }
 
-interface BankaiOpts {
+export interface BankaiOpts {
   quiet?: boolean
   watch?: boolean
   babelifyDeps?: boolean
 }
 
-interface FastifyBankaiHookOpts {
+export interface FastifyBankaiHookOpts {
   entry: string
   opts?: BankaiOpts
   prefix?: string
