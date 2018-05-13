@@ -27,10 +27,22 @@ function _fastifyBankaiHook<
 
   fastify.get('/*', (request, reply) => {
     handler(request.raw, reply.res, () => {
-      reply
-        .code(404)
-        .type('text/plain')
-        .send('not found')
+      if (state.ssr && state.ssr.success === false) {
+        reply
+          .code(500)
+          .type('text/plain')
+          .send('error occured')
+        const error = state.ssr.error
+        fastify.log.error(
+          'Error occured while rendering Bankai app.',
+          error instanceof Error ? error.message : error
+        )
+      } else {
+        reply
+          .code(404)
+          .type('text/plain')
+          .send('not found')
+      }
     })
   })
 
