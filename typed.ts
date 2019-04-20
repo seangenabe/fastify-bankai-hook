@@ -32,9 +32,10 @@ function _fastifyBankaiHook<
           .code(500)
           .type('text/plain')
           .send('error occured')
+        const error = state.ssr.error
         fastify.log.error(
           'Error occured while rendering Bankai app.',
-          state.ssr.error
+          error instanceof Error ? error.message : error
         )
       } else {
         reply
